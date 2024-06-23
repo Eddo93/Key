@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inserisci password</title>
+    <script>
+        function verificaCodice() {
+            const codiceInserito = document.getElementById("codice").value;
+            const codiceCorretto = "245106";  // sostituisci con il codice scelto
+
+            if (codiceInserito === codiceCorretto) {
+                alert("Brava");
+            } else {
+                alert("Hai sbagliato, ritenta");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Inserisci il codice</h1>
+    <input type="text" id="codice" />
+    <button onclick="verificaCodice()">Verifica</button>
+</body>
+</html>
